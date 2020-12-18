@@ -331,6 +331,7 @@ footer spam {
     width: inherit;
     justify-content: space-between;
     padding: 0 5em;
+    z-index: 11;
 }
 .footer-icons-details {
   z-index: 10;
@@ -381,6 +382,19 @@ footer spam {
     left: 0;
     display: flex;
 }
+
+
+
+
+.paraMenu{
+    /* flex-direction: column;
+    flex-wrap: nowrap;
+    /* margin-bottom: 3rem;
+    padding-top: 2.5rem; */
+    /* position: -webkit-sticky;
+    position: sticky; */ */
+}
+}    
 .main-menu{
     width: 285px;
     min-height: 414px;
