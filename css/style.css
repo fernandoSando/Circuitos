@@ -28,6 +28,9 @@ h1,h2,h3,h4,h5,h6 {
     
 
 }
+h2{
+    font-size: 3em;
+}
 
 
 ol, ul{
@@ -238,6 +241,7 @@ article.main-container--left {
     height: 357px;
 }
 .characteristics-details {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,6 +329,12 @@ footer spam {
   background-image:url(https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2FGroup.svg?v=1608072144325);
   width: 60px;
 }
+.simulacion{
+  font-size: 1.5em;
+  background-image:url();
+  width: 60px;
+
+}
 .footer-icons{
     position: absolute;
     display: flex;
@@ -376,7 +386,8 @@ footer spam {
     z-index: 2;
     transition: all .25s ease-out;
     content: "";
-/*     background-color: transparent; */
+    background-image: url(https://media.giphy.com/media/11v8gJRwB2fE3u/giphy.gif);
+
     cursor: pointer;
     top: 0;
     left: 0;
@@ -396,6 +407,7 @@ footer spam {
 }
 
 .main-menu{
+    background-image:url(https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2F6.svg?v=1608069521204);
     width: 285px;
     min-height: 414px;
     height: auto;
