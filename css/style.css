@@ -363,9 +363,7 @@ footer spam {
     line-height: 1.5em;
     letter-spacing: -.2px;
 }
-.content-descripcion{
-/*     line-height: 2em; */
-}
+
 .main-content--unidades {
   margin-top: 1.5em;
   max-width: 875px;
@@ -392,18 +390,6 @@ footer spam {
     top: 0;
     left: 0;
     display: flex;
-}
-
-
-
-
-.paraMenu{
-    /* flex-direction: column;
-    flex-wrap: nowrap;
-    /* margin-bottom: 3rem;
-    padding-top: 2.5rem; */
-    /* position: -webkit-sticky;
-    position: sticky; */ 
 }
 
 .main-menu{
@@ -437,7 +423,135 @@ footer spam {
     vertical-align: middle;
     margin-right: 2em;
 }
+
+
 .aside-unidades{
     position: fixed;
     left: 65em;
+}
+
+
+
+
+
+.bolitas__container{
+    margin: 2em 10em;    
+     /*display: flex;
+    align-items: center;
+    justify-content: center;*/    
+    width: auto;
+    background-color: #5D736B;
+
+
+}
+
+.bolita__seccion{
+    display: flex;
+    padding: 20px;
+    font-size: 13.4px;
+
+}
+
+
+.bolita__unidades{
+    width: 10.5em;
+    height: 10.5em;
+    background-color:var(--black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+}
+.tituloUnidad{
+    font-family: GT-Walsheim-Black;
+    font-size:2.8em;
+    text-decoration: none;
+    color:#E9E9E9;
+
+}
+
+.bolita__content{
+    padding-left: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+       
+}
+
+
+
+
+/* error unidad 3-------------------*/
+.error{
+    margin: 2em 10em;    
+    background-color: #4D6C73;
+    width: auto;
+    
+}
+
+
+
+.error__container{
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+.error__gif{
+    height: 310px;
+    background-image: url(https://media.giphy.com/media/P7PmvHY6kzAqY/giphy.gif);
+    display: flex;
+    width: 476px;
+    background-repeat: no-repeat;
+    background-size: contain;  
+
+}
+/*videos====================================*/
+.videos__container{
+    margin: 2em 2em;
+   
+    height: auto;
+    width: auto;
+    padding: 24px;
+    border-bottom: solid #F2A679 ;
+
+}
+.videos__section{
+    display: flex;
+    padding: 20px;
+    background-color: #0F4C59;
+    flex-wrap: wrap;
+    
+}
+.videos{
+    width: 378px;
+    height: 222px;
+    background-color:var(--black);
+    border-radius: 5%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    padding: 1em;
+    margin: 7px;
+    background-size: contain; 
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.5); 
+
+}
+.videos iframe{
+    width:100%;
+}
+#gif_6{
+   
+    width:100%;
+    background-image: url(https://media.giphy.com/media/11jQqqyF4S5MWY/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    
+
 }
