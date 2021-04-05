@@ -382,6 +382,7 @@ footer spam {
   background-color: #2B3238;
   margin-bottom: 1em;
   height: auto;
+  
 }
 .VideoAfter {
     z-index: 2;
@@ -452,6 +453,8 @@ footer spam {
     justify-content: center;*/    
     width: auto;
     background-color: #5D736B;
+    
+    
 
 
 }
@@ -460,12 +463,15 @@ footer spam {
     display: flex;
     padding: 20px;
     font-size: 13.4px;
+    
 
 }
 
 
 .bolita__unidades{
+    position: relative;
     color: #0d6efd;
+    text-decoration: none;
     border-color: #0d6efd;
     padding: 4em;
     width: 10.5em;
@@ -476,6 +482,11 @@ footer spam {
     align-items: center;
     justify-content: center;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    animation-name: examplebolita;
+    animation-duration: 4s;
+    animation-direction: reverse;  
+
+    
     
 
 }
@@ -483,7 +494,7 @@ footer spam {
 .tituloUnidad{
     font-family: GT-Walsheim-Black;
     font-size:2.8em;
-    text-decoration: none;
+    
     color:#E9E9E9;
 
 }
@@ -495,10 +506,15 @@ footer spam {
     align-items: center;
     justify-content: center; 
     
+    
+
+    
        
 }
 
-
+a.bolita__unidades:hover{
+    background: #F2A679;
+}
 
 
 /* error unidad 3-------------------*/
@@ -547,6 +563,7 @@ footer spam {
     
 }
 .videos{
+    position: relative;
     width: 378px;
     height: 222px;
     background-color:var(--black);
@@ -558,6 +575,10 @@ footer spam {
     margin: 7px;
     background-size: contain; 
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.5); 
+    animation-name: examplevideos;
+    animation-duration: 2s;
+    animation-direction: reverse; 
+    
 
 }
 .videos iframe{
@@ -585,3 +606,82 @@ footer spam {
 .navbar-light .navbar-nav .nav-link {
     color: var(--just-white)!important;
 }
+
+.nav-item:hover{
+    background: #F2A679;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+
+.cont-Page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #e0e0e0;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.contPage-Principal {
+    position: relative;
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.5); 
+    animation-name: examplevideos;
+    animation-duration: 4s;
+    animation-direction: reverse; 
+}
+
+
+.contPaga-Secundary {
+    background-color: #bae8ff;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+}
+
+
+
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: top;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes examplebolita {
+    0%   {background-color:#F2A679; left:0px; top:0px;}
+    50%  {background-color: var(--blue); left:200px; top:0px;}
+    50%  {background-color:var(--just-white); left:200px; top:200px;}
+    75%  {background-color:var(--turkery-intense); left:0px; top:200px;}
+    100% {background-color:#4D6C73; left:0px; top:0px;}
+  }
+
+  @keyframes examplevideos {
+    0%   {background-color:#F2A679; left:0px; top:0px;}
+    25%  {background-color:var(--blue); left:100%; top:0px;}
+    50%  {background-color:var(--just-white); left:100%; top:100%;}
+    75%  {background-color:var(--turkery-intense); left:0px; top:100%;}
+    100% {background-color:#4D6C73; left:0px; top:0px;}
+  }
