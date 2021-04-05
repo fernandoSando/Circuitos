@@ -31,6 +31,9 @@ h1,h2,h3,h4,h5,h6 {
 h2{
     font-size: 3em;
 }
+.h1, h1 {
+    font-size: calc(0.375rem + 2.5vw);
+}
 
 
 ol, ul{
@@ -416,18 +419,26 @@ footer spam {
     align-items: center;
 }
 .menu-info--descripcion spam{
-    background-image:url(https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2FEllipse%201.svg?v=1608109141713);
+    /*background-image:url(https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2FEllipse%201.svg?v=1608109141713);*/
     width: 32px;
     height: 32px;   
     display: inline-block;
     vertical-align: middle;
     margin-right: 2em;
+    background-color: #F2A679;
+    border-radius: 50%;
 }
 
 
 .aside-unidades{
-    position: fixed;
-    left: 65em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+    right: 0px;
+    z-index: 3;
+    height: calc(115vh - 18rem);
+    overflow-y: auto;
+    border-radius: 5%;
 }
 
 
@@ -454,6 +465,9 @@ footer spam {
 
 
 .bolita__unidades{
+    color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 4em;
     width: 10.5em;
     height: 10.5em;
     background-color:var(--black);
@@ -462,8 +476,10 @@ footer spam {
     align-items: center;
     justify-content: center;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    
 
 }
+
 .tituloUnidad{
     font-family: GT-Walsheim-Black;
     font-size:2.8em;
@@ -471,6 +487,7 @@ footer spam {
     color:#E9E9E9;
 
 }
+
 
 .bolita__content{
     padding-left: 2em;
@@ -554,4 +571,17 @@ footer spam {
     background-size: contain; 
     
 
+}
+
+#carrito,
+.bg-light
+{
+    background-color:var(--black)!important;
+    background-size: var(--just-white)!important;
+}
+.navbar-light .navbar-nav,.navbar-light, .navbar-nav .show>.nav-link,.nav-item {
+    color: var(--just-white)!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--just-white)!important;
 }

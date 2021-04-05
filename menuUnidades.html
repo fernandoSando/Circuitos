@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css " crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  
+    
     <link
       href="https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2FGT-Walsheim-Black.ttf?v=1608068687130"
       rel="stylesheet"
@@ -22,37 +22,42 @@
 </head>
 
 <body>
-    <header>
-        <div class="header--menu">
-          <a href="./index.html">
-            <img
-            class="logo"
-            src="https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2Flogo.png?v=1608049165193"
-            alt=""
-            />
-          </a>
-          <ol class="menu--information">
-            <li>
-              <a href="./index.html">
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a href="./unidadesVideos.html">
-                Videos
-              </a>
-            </li>            
-          </ol>
-        </div>
-      </header>
+  
+  <nav id = "carrito" class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://fernandosando.github.io/Circuitos/index.html">
+        <img
+        class="logo"
+        src="https://cdn.glitch.com/7707c4c3-014b-4ed8-b396-afb6a0dff28e%2Flogo.png?v=1608049165193"
+        alt=""
+        />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a> </li>
+          <li class="nav-item"><a class="nav-link" href="./menuUnidades.html">Unidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="./unidadesVideos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
 
 
 
    <div class="bolitas__container">
      <div class = "bolita__seccion"> 
-        <div class="bolita__unidades">
-            <a  href="./unidades.html" class="tituloUnidad">U1</a>
-        </div>
+      <div >
+        <a class="bolita__unidades" href="./unidades.html" >
+         <div class=" tituloUnidad">
+           U1
+         </div>
+
+        </a>
+    </div>
         
         <div class="bolita__content">
             <h1>
@@ -65,10 +70,16 @@
         </div>
    </div>
 
-   <div class="bolitas__container">
+   <div  class="bolitas__container">
     <div class = "bolita__seccion"> 
-       <div class="bolita__unidades">
-           <a  href="./unidades2.html" class="tituloUnidad">U2</a>
+      
+       <div >
+           <a class="bolita__unidades" href="./unidades2.html" >
+            <div class=" tituloUnidad">
+              U2
+            </div>
+
+           </a>
        </div>
        
        <div class="bolita__content">
@@ -84,9 +95,14 @@
 
   <div class="bolitas__container">
     <div class = "bolita__seccion"> 
-       <div class="bolita__unidades">
-           <a  href="./unidades3.html" class="tituloUnidad">U3</a>
-       </div>
+      <div >
+        <a class="bolita__unidades" href="./unidades3.html" >
+         <div class=" tituloUnidad">
+           U3
+         </div>
+
+        </a>
+    </div>
        
        <div class="bolita__content">
            <h1>
@@ -133,6 +149,23 @@
     </div>
   </footer>
 
-    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
